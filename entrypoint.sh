@@ -1,2 +1,5 @@
+#!/bin/sh -l
+
 yarn install
-echo $(yarn outdated)
+DEPRECATED=`yarn outdated --color`
+echo "$DEPRECATED"

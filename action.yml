@@ -1,0 +1,8 @@
+name: "Check dependencies"
+description: "Checks if project has out-of-date dependencies"
+outputs:
+  deprecated: # output will be available to future steps
+    description: "names of deprecated packages"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
